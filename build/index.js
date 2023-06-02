@@ -102,17 +102,17 @@ cmbTipoDb.addEventListener('change',()=>{
       case 'PROPIO':
         GlobalUrlServicePedidos = '';
         break;
-      
-      case 'SMARTERASP':
-        GlobalUrlServicePedidos = 'http://alexissoporte-001-site2.etempurl.com';
-        break;
     
       case 'HEROKU':
         GlobalUrlServicePedidos = 'https://mercados-efectivos-api.herokuapp.com'
         break;
-      default:
-        GlobalUrlServicePedidos = '';
-        break;
+     
+      case 'RENDER':
+          GlobalUrlServicePedidos = ''
+          break;
+        default:
+          GlobalUrlServicePedidos = '';
+          break;
     }
           
           

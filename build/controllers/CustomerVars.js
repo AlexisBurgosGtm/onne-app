@@ -1,16 +1,12 @@
-let GlobalToken = 'MERCADOSEFECTIVOS';
+let GlobalToken = 'DIST_JV';
 let GlobalCodSucursal = '';
 
-let GlobalEmpnit = '1034261-3';
-let GlobalEmpNombre = 'MERCADOS EFECTIVOS';
+let GlobalEmpnit = 'DIST_JV';
+let GlobalEmpNombre = 'DISTRIBUIDORA';
 
 
 let GlobalVentaMinima = 79.99;
 
 let dataEmpresas = [ 
-    {codsucursal:"ME-ZACAPA",nomsucursal:"SUCURSAL ZACAPA",color:"success"},
-    {codsucursal:"ME-IZABAL",nomsucursal:"SUCURSAL IZABAL",color:"primary"},
-    {codsucursal:"ME-JUTIAPA",nomsucursal:"SUCURSAL JUTIAPA",color:"info"},
-    {codsucursal:"ME-COBAN",nomsucursal:"SUCURSAL COBAN",color:"warning"},
-    {codsucursal:"ME-PETEN",nomsucursal:"SUCURSAL PETEN",color:"danger"},
+    {codsucursal:"DIST_JV",nomsucursal:"DISTRIBUIDORA",color:"success"}
   ];

@@ -10,7 +10,7 @@ function getView(){
 
             <div class="col-md-4 col-sm-12 col-lg-4 col-lx-4">
    
-                <div class="card shadow p-2 card-rounded border-info">
+                <div class="card shadow p-2 card-rounded border-primary">
 
                     <div class="card-header text-center bg-white">
                         <div class="row">
@@ -22,7 +22,7 @@ function getView(){
                             </div>
                             <div class="col-4" align="right">
                                 <br>
-                                <button class="btn btn-outline-info btn-lg btn-circle shadow" onclick="funciones.shareAppWhatsapp();">
+                                <button class="btn btn-outline-primary btn-lg btn-circle shadow" onclick="funciones.shareAppWhatsapp();">
                                         <i class="fal fa-paper-plane"></i>
                                 </button>
                             </div>    
@@ -62,13 +62,13 @@ function getView(){
                             </div>
                             <br>
                             <div class="form-group" align="center">
-                                <button class="btn btn-secondary btn-lg shadow col-12 btn-rounded"  type="submit" id="btnIniciar">
+                                <button class="btn btn-primary btn-lg shadow col-12 btn-rounded"  type="submit" id="btnIniciar">
                                     <i class="fal fa-unlock"></i>
                                     Ingresar
                                 </button>
                             </div>
                             <div class="form-group" align="right">
-                                <small class="">Mercados Efectivos - ${versionapp}</small>
+                                <small class="">Onne-App - ${versionapp}</small>
                                 <br>
                                 <small>
                                     <a href="https://apigen.whatsapp.com/send?phone=50257255092&text=Ayudame%20con%20la%20app%20de%20Mercados%20Efectivos...%20">
@@ -90,7 +90,7 @@ function getView(){
        
            
                 <div class="footer-banner">   
-                    <img src="./img/footer.png" width="600" height="200">
+                    <<!--img src="./img/footer.png" width="600" height="200">-->
                 </div> 
                        
 

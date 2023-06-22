@@ -8,5 +8,5 @@ let GlobalEmpNombre = 'DISTRIBUIDORA';
 let GlobalVentaMinima = 79.99;
 
 let dataEmpresas = [ 
-    {codsucursal:"DIST_JV",nomsucursal:"DISTRIBUIDORA",color:"success"}
+    {codsucursal:"DIST_JV",nomsucursal:"DISTRIBUIDORA MICASA",color:"success"}
   ];

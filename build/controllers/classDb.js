@@ -1,4 +1,4 @@
-const DbName = "mercadosefectivosoffline9";
+const DbName = "mercadosefectivosoffline10";
 const DbName_old = "mercadosefectivosoffline7";
 
 var tblDocumentos = {
@@ -136,10 +136,26 @@ var tempcenso = {
     }
 };
 
+var tblMunicipios = {
+    name: 'municipios',
+    columns: {
+        CODMUNI:{dataType: "string"},
+        DESMUNI:{dataType: "string"}
+    }
+};
+
+var tblDepartamentos = {
+    name: 'departamentos',
+    columns: {
+        CODDEPTO:{dataType: "string"},
+        DESDEPTO:{dataType: "string"}
+    }
+};
+
 
 var database = {
     name: DbName,
-    tables: [tblDocumentos,tblProductos,tblClientes,tblTempventas,tblCredenciales,tempcenso]
+    tables: [tblDepartamentos,tblMunicipios,tblDocumentos,tblProductos,tblClientes,tblTempventas,tblCredenciales,tempcenso]
 };
 
 var database_old = {

@@ -1013,40 +1013,30 @@ function getComboMunicipios(idContainer){
     let contenedor = document.getElementById(idContainer);
     let strdata = '';
     
-    axios.get('/censo/municipios', {
-        params:{
-            sucursal: GlobalCodSucursal
-        }
-    })
-    .then((response) => {
-        const data = response.data.recordset;
+    db_select_municipios()
+    .then((data)=>{
         data.map((rows)=>{
                 strdata = strdata + `<option value='${rows.CODMUNI}'>${rows.DESMUNI}</option>`
         })
-        contenedor.innerHTML = strdata;        
-    }, (error) => {
-        contenedor.innerHTML = strdata;        
-    });
+        contenedor.innerHTML = strdata;
+    })
+  
 };
 
 function getComboDepartamentos(idContainer){
     let contenedor = document.getElementById(idContainer);
     let strdata = '';
     
-    axios.get('/censo/departamentos', {
-        params:{
-            sucursal: GlobalCodSucursal
-        }
-    })
-    .then((response) => {
-        const data = response.data.recordset;       
+
+    db_select_departamentos()
+    .then((data)=>{
         data.map((rows)=>{
                 strdata = strdata + `<option value='${rows.CODDEPTO}'>${rows.DESDEPTO}</option>`
         })
-        contenedor.innerHTML = strdata;            
-    }, (error) => {
-        contenedor.innerHTML = strdata;        
-    });
+        contenedor.innerHTML = strdata;
+    })
+
+ 
 };
 
 function sendCliente(id,nit,tiponegocio,negocio,nombre,direccion,referencia,codmun,coddepto,obs,codven,visita,latitud,longitud,telefono,fecha,sector){
